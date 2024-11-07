@@ -30,6 +30,36 @@ object FBoundedPolymorphism extends App {
   class Crocodile extends Animal[Crocodile] {
     override def breed: List[Animal[Crocodile]] = ???
   }
+  class Lion extends Animal[Lion] {
+    override def breed: List[Animal[Lion]] = ???
+  }
+  class Tiger extends Animal[Tiger] {
+    override def breed: List[Animal[Tiger]] = ???
+  }
+  class Elephant extends Animal[Elephant] {
+    override def breed: List[Animal[Elephant]] = ???
+  }
+  class Giraffe extends Animal[Giraffe] {
+    override def breed: List[Animal[Giraffe]] = ???
+  }
+  class Penguin extends Animal[Penguin] {
+    override def breed: List[Animal[Penguin]] = ???
+  }
+  class Kangaroo extends Animal[Kangaroo] {
+    override def breed: List[Animal[Kangaroo]] = ???
+  }
+  class Dolphin extends Animal[Dolphin] {
+    override def breed: List[Animal[Dolphin]] = ???
+  }
+  class Eagle extends Animal[Eagle] {
+    override def breed: List[Animal[Eagle]] = ???
+  }
+  class Panda extends Animal[Panda] {
+    override def breed: List[Animal[Panda]] = ???
+  }
+  class Gorilla extends Animal[Gorilla] {
+    override def breed: List[Animal[Gorilla]] = ???
+  }
   trait Entity[E <: Entity[E]] //ORM
   class Person extends Comparable[Person] { //FBP
     override def compareTo(o: Person): Int = ???
